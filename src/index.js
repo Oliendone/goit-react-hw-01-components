@@ -1,4 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PropTypes from 'prop-types';
-import user from './user.json';
+import App from './components/App';
+
+ReactDOM.render(<App />, document.querySelector('#root'));
