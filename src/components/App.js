@@ -3,22 +3,27 @@ import Profile from '../components/Profile/Profile';
 import Description from '../components/Description/Description';
 import Stats from '../components/Stats/Stats';
 import user from '../user.json';
+import statisticalData from '../statistical-data.json';
+
+const {
+  avatar,
+  name,
+  tag,
+  location,
+  stats: { followers, views, likes },
+} = user;
 
 export default function App() {
   return (
     <>
       <Profile>
         <Description
-          avatar={user.avatar}
-          name={user.name}
-          tag={user.tag}
-          location={user.location}
+          avatar={avatar}
+          name={name}
+          tag={tag}
+          location={location}
         />
-        <Stats
-          followers={user.stats.followers}
-          views={user.stats.views}
-          likes={user.stats.likes}
-        />
+        <Stats followers={followers} views={views} likes={likes} />
       </Profile>
     </>
   );

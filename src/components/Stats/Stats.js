@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import style from './Stats.module.css';
 
-export default function Stats(props) {
+export default function Stats({ followers, views, likes }) {
   return (
-    <ul>
+    <ul className={style.stats}>
       <li>
-        <span className="style.label">Followers</span>
-        <span className="style.quantity">{props.stats.followers}</span>
+        <span className={style.label}>Followers</span>
+        <span className={style.quantity}>{followers}</span>
       </li>
       <li>
-        <span className="style.label">Views</span>
-        <span className="style.quantity">{props.stats.views}</span>
+        <span className={style.label}>Views</span>
+        <span className={style.quantity}>{views}</span>
       </li>
       <li>
-        <span className="style.label">Likes</span>
-        <span className="style.quantity">{props.stats.likes}</span>
+        <span className={style.label}>Likes</span>
+        <span className={style.quantity}>{likes}</span>
       </li>
     </ul>
   );
