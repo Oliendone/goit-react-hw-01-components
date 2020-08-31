@@ -1,9 +1,8 @@
 import React from 'react';
-import Profile from '../components/Profile/Profile';
-import Description from '../components/Description/Description';
-import Stats from '../components/Stats/Stats';
-import user from '../user.json';
-import statisticalData from '../statistical-data.json';
+import Profile from '../Profile/Profile/Profile';
+import Description from '../Profile/Description/Description';
+import Stats from '../Profile/Stats/Stats';
+import user from '../Profile/user.json';
 
 const {
   avatar,
