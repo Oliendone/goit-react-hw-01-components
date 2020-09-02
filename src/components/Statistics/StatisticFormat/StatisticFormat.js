@@ -1,18 +1,18 @@
 import React from 'react';
-import style from './StatisticFormat.module.css';
+import s from './StatisticFormat.module.css';
 import createRandomColor from './createRandomColor';
 
 export default function StatisticFormat({ stats }) {
   return (
-    <ul className={style.statList}>
+    <ul className={s.statList}>
       {stats.map(({ id, label, percentage }) => (
         <li
           key={id}
-          className={style.item}
+          className={s.item}
           style={{ backgroundColor: createRandomColor() }}
         >
-          <span className={style.label}>{label}</span>
-          <span className={style.percentage}>{percentage}%</span>
+          <span className={s.label}>{label}</span>
+          <span className={s.percentage}>{percentage}%</span>
         </li>
       ))}
     </ul>

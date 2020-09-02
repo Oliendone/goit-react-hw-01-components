@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import style from './StatisticsSection.module.css';
+import s from './StatisticsSection.module.css';
 import StatisticFormat from '../StatisticFormat/StatisticFormat';
 
 export default function Statistics({ title, stats }) {
   return (
-    <section className={style.statistics}>
-      {title && <h2 className={style.title}>{title}</h2>}
+    <section className={s.statistics}>
+      {title && <h2 className={s.title}>{title}</h2>}
       <StatisticFormat stats={stats} />
     </section>
   );
